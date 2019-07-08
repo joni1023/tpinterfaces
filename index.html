@@ -110,17 +110,113 @@
 	</div>
 
 <!-- pagina finalizar compra -->
-	<div cata-role="page" id="finalizarcarrito">
+	<div data-role="page" id="finalizarcarrito">
 		<div data-role="header">
 		<h2>finalizar tu compra</h2>	
 		</div>
 
 		<div data-role="content">
-			
-		</div>
+				<div class="ui-grid-a">
+					<h2>tu pedido es:</h2>
+					<div class="ui-block-a" >						
+						<h3>Titulo del libro</h3>
+						<p>El monto e pesos es</p><h5>$350</h5>
+					</div>
+					<div class="ui-block-b">
+						<img src="tapa3.png" style="width: 70%;height: 70%;" >
+					</div>
+				</div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a" >						
+						<h3>Titulo del libro</h3>
+						<p>El monto e pesos es</p><h5>$250</h5>
+					</div>
+					<div class="ui-block-b">
+						<img src="tapa2.png" style="width: 70%;height: 70%;" >
+					</div>
+				</div>			
+				
+				<br>
+				<h2>EL SUBTOTAL ES : $600 </h2>
+			</div>
+			  <ul data-role="listview">
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Datos de envio</h3>
+              <ul data-role="listview">
+                <li><label for="name">Email para confirmar pedido:</label>
+    								<input type="email" name="name" id="email"/></li>
+                <li><label for="name">Apellido:</label>
+    								<input type="text" name="name" id="email"/></li>
+                <li><label for="name">Nombres:</label>
+    								<input type="text" name="name" id="email"/></li>
+                <li><label for="name">Direccion:</label>
+    								<input type="text" name="name" id="email"/></li>
+    			<li><label for="name">Ciudad:</label>
+    								<input type="text" name="name" id="email"/></li>
+    			<li><label for="select-choice-1" class="select">Pais:</label>
+  				 <select name="select-choice-1" id="select-choice-1">
+			      <option value="standard">Argentina</option>
+			      <option value="rush">Brasil</option>
+			      <option value="express">Paraguay</option>
+			      <option value="overnight">Uruguay</option>
+			   	</select></li>
+			   	<li><label for="name">codigo postal:</label>
+    								<input type="text" name="name" id="email"/></li>
+    			<li><label for="name">telefono:</label>
+    								<input type="text" name="name" id="email"/></li>										
+              </ul>
+          </li >
+          <li data-role="collapsible" data-inset="false" data-iconpos="right">
+          	<h3>Metodo de envio</h3>
+          	<ul data-role="listview">
+          		<li><fieldset data-role="controlgroup">
+				     	<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
+				     	<label for="radio-choice-1"><h3>Encomienda clasica:</h3><p>Entre 7 a 10 dias</p><h5>$950</h5></label>
+
+				     	<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+				     	<label for="radio-choice-2"><h3>Encomienda Prioritaria:</h3><p>Entre 2 a 5 dias</p><h5>$750</h5></label>
+
+				     	<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+				     	<label for="radio-choice-3"><h3>Retiro en local Fiordo:</h3><p>San Telmo, CABA, Buenos Aires, 1702</p><h5>Gratis</h5></label>
+				</fieldset>	
+          		</li>
+          	</ul>
+          </li>
+          <li data-role="collapsible" data-inset="false" data-iconpos="right">
+          	<h3>Pago</h3>
+          	<ul data-role="listview">
+          		<li><div>
+          			<h3>Pago con Mercadopago</h3>
+          			<div style="word-wrap: break-word;"><p>Al hacer clic en Comprar Ahora serás redirigido a MercadoPago donde puedes completar tu compra de manera segura</p></div>
+          			<a href="#" data-role="button" data-theme="c">conectar</a>
+          		</div>
+          		</li>
+          	</ul>
+          </li>
+
+          <li data-role="collapsible" data-inset="false" data-iconpos="right">
+          	<h3>Revisar y Realizar pedido</h3>
+          	<ul data-role="listview">
+          		<li><div style="word-wrap: break-word;">
+          			<h3>EL SUBTOTAL ES : $600 </h3>
+          			<h3>Gastos de envio: $350</h3>
+          			<h2>TOTAL A ABONAR : $1050</h2>
+          			<a href="#" data-role="button" data-theme="c">Finalizar compra</a>
+          			</div>
+          		</li>
+          	</ul>
+          </li>
+
+			</ul>
 
 		<div data-role="footer">
-			
+			<div data-role="navbar" data-iconpos="bottom">
+		<ul>
+			<li><a href="#" data-icon="arrow-l">Volver</a></li>
+			<li><a href="#" data-icon="home">Inicio</a></li>
+			<li><a href="#" data-icon="delete">Cancelar</a></li>
+		</ul>
+			</div>
 		</div>
 	</div>
 		
