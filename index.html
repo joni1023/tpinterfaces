@@ -35,7 +35,7 @@
 </head>
 <body>
 	<!-- pagina index -->
-	<div data-role="page" data-theme="a">
+	<div data-role="page" data-theme="a" id="index">
 		<div data-role="panel" id="mypanel">
 			   
 			   <ul data-role="listview">
@@ -134,11 +134,11 @@
 
 		<div data-role="header" >
 			<input type="search" class="ui-corner-all" name="search-mini" id="search-mini" value="" placeholder="buscar" />
-			<img src="logo.png" style="width:100%;">
+			<img src="logo2.png" style="width:100%;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a></li>
-					<li><a href="" class="ui-btn ui-shadow ui-corner-all ui-icon-shop ui-btn-icon-left">carrito</a></li>
+					<li><a href="#finalizarcarrito" class="ui-btn ui-shadow ui-corner-all ui-icon-shop ui-btn-icon-left">carrito</a></li>
 				</ul>
 			</div>
 
@@ -169,9 +169,9 @@
 		<div data-role="footer" data-theme="a">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#">One</a></li>
-					<li><a href="#">Two</a></li>
-					<li><a href="#">Three</a></li>
+					<li><a href="#index" data-icon="arrow-l">Volver</a></li>
+					<li><a href="#index" data-icon="home">Inicio</a></li>
+					<li><a href="#" data-icon="delete">Cancelar</a></li>
 				</ul>
 			</div>
 		</div>
@@ -287,8 +287,8 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-iconpos="bottom">
 		<ul>
-			<li><a href="#" data-icon="arrow-l">Volver</a></li>
-			<li><a href="#" data-icon="home">Inicio</a></li>
+			<li><a href="#index" data-icon="arrow-l">Volver</a></li>
+			<li><a href="#index" data-icon="home">Inicio</a></li>
 			<li><a href="#" data-icon="delete">Cancelar</a></li>
 		</ul>
 			</div>
