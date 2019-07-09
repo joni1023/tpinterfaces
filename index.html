@@ -25,7 +25,9 @@
 .ui-listview .ui-listview .ui-btn:active {
     background: #f1f1f1;
 }
-
+.btn-continuar{
+	background-color: black;
+}
 
 
 </style>
@@ -255,6 +257,7 @@
 				
 				<br>
 				<h2>EL SUBTOTAL ES : $600 </h2>
+				<div><a class="btn-continuar" href="#" data-role="button" data-theme="b">CONFIRMAR</a></div>
 			</div>
 			  <ul data-role="listview">
             <li data-role="collapsible" data-inset="false" data-iconpos="right">
@@ -280,8 +283,10 @@
 			   	<li><label for="name">codigo postal:</label>
     								<input type="text" name="name" id="email"/></li>
     			<li><label for="name">telefono:</label>
-    								<input type="text" name="name" id="email"/></li>										
+    								<input type="text" name="name" id="email"/></li>
+    																		
               </ul>
+              <div><a class="btn-continuar" href="#" data-role="button" data-theme="b">CONTINUAR</a></div>
           </li >
           <li data-role="collapsible" data-inset="false" data-iconpos="right">
           	<h3>Metodo de envio</h3>
@@ -296,7 +301,9 @@
 				     	<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
 				     	<label for="radio-choice-3"><h3>Retiro en local Fiordo:</h3><p>San Telmo, CABA, Buenos Aires, 1702</p><h5>Gratis</h5></label>
 				</fieldset>	
+			<div><a class="btn-continuar" href="#" data-role="button" data-theme="b">CONTINUAR</a></div>
           		</li>
+          		
           	</ul>
           </li>
           <li data-role="collapsible" data-inset="false" data-iconpos="right">
@@ -305,7 +312,7 @@
           		<li><div>
           			<h3>Pago con Mercadopago</h3>
           			<div style="word-wrap: break-word;"><article>Al hacer clic en Comprar Ahora <br>serás redirigido a MercadoPago donde<br> puedes completar tu compra de manera segura</article></div>
-          			<a href="#" data-role="button" data-theme="c">conectar</a>
+          			<div><a href="#" data-role="button" data-theme="b">conectar</a>
           		</div>
           		</li>
           	</ul>
@@ -318,8 +325,8 @@
           			<h3>EL SUBTOTAL ES : $600 </h3>
           			<h3>Gastos de envio: $350</h3>
           			<h2>TOTAL A ABONAR : $1050</h2>
-          			<a href="#" data-role="button" data-theme="c">Finalizar compra</a>
           			</div>
+          			<div><a href="#" data-role="button" data-theme="b">FINALIZAR COMPRA</a></div>
           		</li>
           	</ul>
           </li>
